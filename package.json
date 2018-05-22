@@ -2,8 +2,10 @@
   "name": "goalcoach",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://louisagr.github.io/goalcoach",
   "dependencies": {
     "firebase": "^5.0.3",
+    "gh-pages": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
@@ -12,6 +14,8 @@
     "redux": "^4.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
